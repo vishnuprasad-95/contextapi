@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import addressBook from './images/addressBook.png';
-import { ContactContext } from './ContactContext';
+import { ContactContext } from './contexts/ContactContext';
+import ThemeToggle from './ThemeToggle';
 import styled from 'styled-components';
 
 const NavBar = styled.div`
@@ -36,13 +37,13 @@ const TopNav = () => {
       <Icon>
         <img src={addressBook} alt='Hello' width="40" height="40" />
       </Icon>
-      <button> Change theme </button>
       <h3 className="txt-alc">
         CONTACT BOOK
       </h3>
       <Counter>
         Contacts: {contacts.length}
       </Counter>
+      <ThemeToggle/>
     </NavBar>
   );
 };

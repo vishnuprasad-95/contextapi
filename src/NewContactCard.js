@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-import { ContactContext } from './ContactContext';
+import { ContactContext } from './contexts/ContactContext';
 
 const Card = styled.div`
   position: relative;
@@ -45,7 +45,7 @@ const Button = styled.button`
 
 
 const NewContactCard = () => {
-  const [contacts, setContacts] = useContext(ContactContext);
+  const [setContacts] = useContext(ContactContext);
 
   const [rotated, setRotated] = useState(false);
   const [name, setName] = useState('');  

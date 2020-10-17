@@ -35,7 +35,7 @@ const Rotate = styled.div`
 `;
 
 const CardText = styled.div``;
-const CardFace = styled.div``;
+// const CardFace = styled.div``;
 
 const ContactCard = ({ contact: { name, designation, description, phone, email, image } }) => {
   const [rotated, setRotated] = useState(false);
